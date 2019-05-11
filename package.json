@@ -1,0 +1,22 @@
+{
+  "name": "babel-plugin-reanimated-formula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "start": "node lib/transform"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-types": "^6.26.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.4"
+  }
+}
