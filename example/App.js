@@ -21,17 +21,18 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
 
-    const a = 3 ; 
-   
-    const b = ` I have ${a} icecreams`;
+    const a = new Animated.Value(10) ; 
+    const b = new Animated.Value(100) ;
+
+
 
   
     return (
-      <View style={styles.container}>
+      <Animated.View style={[styles.container, { transform: [{ translateX: `formula(${a}+${b})`}]}]}>
         <Text style={styles.welcome}></Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      </Animated.View>
     );
   }
 }
